@@ -6,4 +6,4 @@ COPY ./server.jar ./server.jar
 COPY ./eula.txt ./eula.txt
 COPY ./server.properties ./server.properties
 EXPOSE 25565
-CMD [ "/bin/sh", "-c", "/usr/bin/java -Xmx1024M -Xms1024M -jar ./home/server.jar nogui" ]
+CMD [ "/bin/sh", "-c", "/usr/bin/java -Xmx1024M -Xms1024M -jar ./server.jar nogui" ]
